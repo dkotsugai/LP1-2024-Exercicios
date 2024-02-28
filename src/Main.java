@@ -3,8 +3,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Exercicio2");
-        System.out.println("TesteDuasLinhas");
+        System.out.println("Exercicio3\nTesteduasLinhas");
+
 
     }
 }
