@@ -1,6 +1,5 @@
-package br.gov.sp.fatecsjc.MediaSemestral;
+package br.gov.sp.fatecsjc.tarefa1.MediaSemestral;
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {

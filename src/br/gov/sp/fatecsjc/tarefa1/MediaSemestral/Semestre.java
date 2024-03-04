@@ -1,4 +1,4 @@
-package br.gov.sp.fatecsjc.MediaSemestral;
+package br.gov.sp.fatecsjc.tarefa1.MediaSemestral;
 
 public class Semestre {
     private double nota1;

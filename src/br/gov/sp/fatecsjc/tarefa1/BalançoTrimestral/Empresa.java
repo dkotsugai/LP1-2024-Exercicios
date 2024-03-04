@@ -1,6 +1,5 @@
-package br.gov.sp.fatecsjc.BalançoTrimestral;
+package br.gov.sp.fatecsjc.tarefa1.BalançoTrimestral;
 
-import java.text.DecimalFormat;
 public class Empresa {
     public static void main(String[] args) {
 

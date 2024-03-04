@@ -1,4 +1,4 @@
-package br.gov.sp.fatecsjc.BalançoTrimestral;
+package br.gov.sp.fatecsjc.tarefa1.BalançoTrimestral;
 
 public class GastosTrimestrais {
     private double janeiro;
