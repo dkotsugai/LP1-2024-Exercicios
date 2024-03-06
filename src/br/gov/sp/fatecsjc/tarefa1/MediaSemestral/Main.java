@@ -18,10 +18,13 @@ public class Main {
         System.out.print("Digite a nota API: ");
         double API = scanner.nextDouble();
 
+        System.out.print("Digite a nota X: ");
+        double X = scanner.nextDouble();
+
         System.out.print("Digite a nota SUB: ");
         double SUB = scanner.nextDouble();
 
-        Semestre semestreDoAluno = new Semestre(P1, E1, E2, API, SUB);
+        Semestre semestreDoAluno = new Semestre(P1, E1, E2, API, X, SUB);
 
         double mediaDoSemestre = semestreDoAluno.calcularMedia();
         System.out.println("A média do aluno é de: " + mediaDoSemestre);
