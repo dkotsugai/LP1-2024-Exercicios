@@ -24,7 +24,7 @@ public class Main {
         Semestre semestreDoAluno = new Semestre(P1, E1, E2, API, SUB);
 
         double mediaDoSemestre = semestreDoAluno.calcularMedia();
-        System.out.println("A média do aluno é se: " + mediaDoSemestre);
+        System.out.println("A média do aluno é de: " + mediaDoSemestre);
 
         scanner.close();
     }
