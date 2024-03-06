@@ -1,19 +1,22 @@
 package br.gov.sp.fatecsjc.tarefa1.MediaSemestral;
 
 public class Semestre {
-    private double nota1;
-    private double nota2;
-    private double nota3;
+    private double P1, E1, E2, API, SUB;
 
-    public Semestre(double nota1, double nota2, double nota3) {
-        this.nota1 = nota1;
-        this.nota2 = nota2;
-        this.nota3 = nota3;
+    public Semestre(double P1, double E1, double E2, double API, double SUB) {
+        this.P1 = P1;
+        this.E1 = E1;
+        this.E2 = E2;
+        this.API = API;
+        this.SUB = SUB;
     }
+
     public double calcularMedia() {
-        return (nota1 + nota2 + nota3) / 3;
-    }
-    public static boolean notasValidas(double nota1, double nota2, double nota3) {
-        return (nota1 >= 0 && nota1 <= 10) && (nota2 >= 0 && nota2 <= 10) && (nota3 >= 0 && nota3 <= 10);
+        double resultado = (P1 * 0.6 + ((E1 + E2) / 2) * 0.4) * 0.5 +
+                (Math.max(P1 * 0.6 + ((E1 + E2) / 2) * 0.4 - 5.9, 0) /
+                        (P1 * 0.6 + ((E1 + E2) / 2) * 0.4 - 5.9)) * (API * 0.5) +
+                SUB * 0.2;
+
+        return resultado;
     }
 }

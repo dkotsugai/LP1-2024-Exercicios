@@ -2,31 +2,29 @@ package br.gov.sp.fatecsjc.tarefa1.MediaSemestral;
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
-            System.out.println("Nota da primeira prova (LP1): ");
-            double nota1 = scanner.nextDouble();
+        System.out.print("Digite a nota P1: ");
+        double P1 = scanner.nextDouble();
 
-            System.out.println("Nota da segunda prova (LP1): ");
-            double nota2 = scanner.nextDouble();
+        System.out.print("Digite a nota E1: ");
+        double E1 = scanner.nextDouble();
 
-            System.out.println("Nota da terceira prova (LP1): ");
-            double nota3 = scanner.nextDouble();
+        System.out.print("Digite a nota E2: ");
+        double E2 = scanner.nextDouble();
 
-            // Verifica se as notas estão dentro do intervalo válido (0 a 10)
-            if (!Semestre.notasValidas(nota1, nota2, nota3)) {
-                System.out.println("Por favor, insira notas válidas entre 0 e 10. Reiniciando o programa...\n");
-                continue;  // Reinicia o loop
-            }
+        System.out.print("Digite a nota API: ");
+        double API = scanner.nextDouble();
 
-            Semestre semestre = new Semestre(nota1, nota2, nota3);
+        System.out.print("Digite a nota SUB: ");
+        double SUB = scanner.nextDouble();
 
-            double media = semestre.calcularMedia();
-            System.out.println("A média do aluno: " + String.format("%.1f",media));
-            break;
-        }
+        Semestre semestreDoAluno = new Semestre(P1, E1, E2, API, SUB);
+
+        double mediaDoSemestre = semestreDoAluno.calcularMedia();
+        System.out.println("A média do aluno é se: " + mediaDoSemestre);
 
         scanner.close();
     }
